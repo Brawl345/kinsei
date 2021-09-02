@@ -8,7 +8,7 @@ Feed aggregator that shows various RSS feeds in a continous stream.
 
 ```bash
 cp feeds.example.json feeds.json # Fill it in
-npm run prepare # Serializes feeds.json into .env.local
+npm run generate-env # Serializes feeds.json into .env.local
 npm ci
 npm run dev # Development
 npm run build && npm run start ## Production

@@ -6,7 +6,7 @@
   },
   "license": "Unlicense",
   "scripts": {
-    "prepare": "node prepareEnv.js",
+    "generate-env": "node generateEnv.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
