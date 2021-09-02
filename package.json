@@ -1,0 +1,51 @@
+{
+  "name": "kinsei",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/Brawl345/kinsei.git"
+  },
+  "license": "Unlicense",
+  "scripts": {
+    "prepare": "node prepareEnv.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-dependencies": "npm-check --skip-unused"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^11.1.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import":"^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-unicorn": "^35.0.0",
+    "prettier": "2.3.2",
+    "sass": "^1.39.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^11.1.2",
+    "bulma": "^0.9.3",
+    "dayjs": "^1.10.6",
+    "isomorphic-dompurify": "^0.15.0",
+    "next": "^11.1.2",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-bulma-components": "^4.0.7",
+    "react-dom": "^17.0.2",
+    "rss-parser": "^3.12.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ]
+}
