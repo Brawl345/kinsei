@@ -30,6 +30,18 @@ function Sidebar() {
         </Message.Body>
       </Message>
 
+      <Message color="link">
+        <Message.Header>Abonnieren</Message.Header>
+        <Message.Body>
+          <Content>
+            <p>
+              Der Planet selbst kann auch per RSS 2.0{' '}
+              <a href="/feed">abonniert</a> werden.
+            </p>
+          </Content>
+        </Message.Body>
+      </Message>
+
       <Message>
         <Message.Header>Feeds</Message.Header>
         <Message.Body>
