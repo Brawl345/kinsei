@@ -48,7 +48,7 @@ function FeedItem({ item }) {
               target="_blank"
               rel="noreferrer noopener"
             >
-              {item.feedInfo.title ? item.feedInfo.title : 'Kein Titel'}
+              {item.feedInfo.title}
             </a>{' '}
             -{' '}
             <a
@@ -57,7 +57,7 @@ function FeedItem({ item }) {
               target="_blank"
               rel="noreferrer noopener"
             >
-              {item.title}
+              {item.title ? item.title : 'Kein Titel'}
             </a>
           </Heading>
         </Card.Header.Title>
