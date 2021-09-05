@@ -10,7 +10,7 @@ export async function getStaticProps() {
 
   return {
     props: { items },
-    revalidate: 600, // re-generate every 10 minutes
+    revalidate: 60,
   };
 }
 

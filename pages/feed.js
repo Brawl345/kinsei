@@ -1,9 +1,8 @@
 import absoluteUrl from 'next-absolute-url';
-
 import { Builder } from 'xml2js';
 import getFeedItems from '@/lib/getFeedItems';
 
-async function get(req, res) {
+export async function getServerSideProps({ req, res }) {
   const { protocol, host } = absoluteUrl(req);
 
   const items = await getFeedItems();
@@ -57,13 +56,17 @@ async function get(req, res) {
   const builder = new Builder();
   const xml = builder.buildObject(feed);
 
+  res.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate=59');
   res.setHeader('Content-Type', 'text/xml');
-  return res.status(200).send(xml);
+
+  res.write(xml);
+  res.end();
+
+  return {
+    props: {},
+  };
 }
 
-export default function handler(req, res) {
-  if (req.method === 'GET') {
-    return get(req, res);
-  }
-  return res.status(405).send();
+export default function FeedXML() {
+  return null;
 }

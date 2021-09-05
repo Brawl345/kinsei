@@ -6,12 +6,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/feed',
-        destination: '/api/feed',
-      },
-      {
         source: '/rss20.xml',
-        destination: '/api/feed',
+        destination: '/feed',
       },
     ];
   },
