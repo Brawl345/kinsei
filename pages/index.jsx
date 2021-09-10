@@ -20,7 +20,7 @@ function HomePage({ items }) {
       <HtmlHead pageTitle="金星" description="金星 Feed-Aggregator" />
 
       <Columns>
-        <Columns.Column>
+        <Columns.Column size="two-thirds">
           {items.map((item) => (
             <FeedItem key={item.link} item={item} />
           ))}

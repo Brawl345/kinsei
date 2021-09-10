@@ -1,7 +1,19 @@
 @import "~bulma/bulma";
 
 .feed-content .alignleft {
-    display: inline;
-    float:left;
-    margin-right: 1rem;
+  display: inline;
+  float: left;
+  margin-right: 1rem;
+}
+
+.feed-content .alignleft::after {
+  clear: both;;
+}
+
+.contain-content {
+  contain: content;
+}
+
+.title a:hover {
+  text-decoration: underline;
 }

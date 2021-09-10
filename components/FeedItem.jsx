@@ -16,7 +16,7 @@ function FeedItem({ item }) {
     : '<i>Kein Inhalt</i>';
 
   return (
-    <Card mb={5}>
+    <Card className="contain-content" mb={5}>
       <Card.Header>
         <Card.Header.Icon>
           {item.feedInfo.image && (
